@@ -1,15 +1,8 @@
-import {
-  Container,
-  Badge,
-  Link,
-  List,
-  ListItem,
-  AspectRatio
-} from '@chakra-ui/react'
-import { ExternalLinkIcon } from '@chakra-ui/icons'
-import { Title, WorkImage, Meta } from '../../components/work'
-import P from '../../components/paragraph'
-import Layout from '../../components/layouts/article'
+import { Container, Badge, Link, List, ListItem } from "@chakra-ui/react";
+import { ExternalLinkIcon } from "@chakra-ui/icons";
+import { Title, WorkImage, Meta } from "../../components/work";
+import P from "../../components/paragraph";
+import Layout from "../../components/layouts/article";
 
 const Work = () => (
   <Layout title="Inkdrop">
@@ -24,7 +17,7 @@ const Work = () => (
         <ListItem>
           <Meta>Website</Meta>
           <Link href="https://ceskkc.csb.app/">
-          https://ceskkc.csb.app/ <ExternalLinkIcon mx="2px" />
+            https://ceskkc.csb.app/ <ExternalLinkIcon mx="2px" />
           </Link>
         </ListItem>
         <ListItem>
@@ -35,16 +28,14 @@ const Work = () => (
           <Meta>Stack</Meta>
           <span>React</span>
         </ListItem>
-        
       </List>
 
       <WorkImage src="/images/works/newflix.png" alt="Inkdrop" />
       {/* <WorkImage src="/images/works/newflix2.png" alt="Inkdrop" />
       <WorkImage src="/images/works/newflix2.png" alt="Inkdrop" /> */}
-      
     </Container>
   </Layout>
-)
+);
 
-export default Work
-export { getServerSideProps } from '../../components/chakra'
+export default Work;
+export { getServerSideProps } from "../../components/chakra";

@@ -1,19 +1,8 @@
-import {
-  Box,
-  Container,
-  Badge,
-  Link,
-  List,
-  ListItem,
-  UnorderedList,
-  Heading,
-  Center
-} from '@chakra-ui/react'
-import { ExternalLinkIcon } from '@chakra-ui/icons'
-import { Title, WorkImage, Meta } from '../../components/work'
-import P from '../../components/paragraph'
-import Layout from '../../components/layouts/article'
-
+import { Container, Badge, Link, List, ListItem } from "@chakra-ui/react";
+import { ExternalLinkIcon } from "@chakra-ui/icons";
+import { Title, WorkImage, Meta } from "../../components/work";
+import P from "../../components/paragraph";
+import Layout from "../../components/layouts/article";
 
 const Work = () => (
   <Layout title="The four painters">
@@ -37,23 +26,14 @@ const Work = () => (
             Flash Card <ExternalLinkIcon mx="2px" />
           </Link>
         </ListItem>
-        
-        
       </List>
 
-      
-
-      
-
-      
-
-      
       <WorkImage src="/images/works/flash1.png" alt="walknote" />
       <WorkImage src="/images/works/flash2.png" alt="walknote" />
       <WorkImage src="/images/works/flash3.png" alt="walknote" />
     </Container>
   </Layout>
-)
+);
 
-export default Work
-export { getServerSideProps } from '../../components/chakra'
+export default Work;
+export { getServerSideProps } from "../../components/chakra";
